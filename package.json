@@ -1,0 +1,44 @@
+{
+  "name": "painter-web",
+  "version": "1.0.0",
+  "description": "为H5提供的painter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "dev": "BUILD_ENV=DEV rollup -c rollup.config.js -w",
+    "build": "BUILD_ENV=PRD rollup -c rollup.config.js",
+    "prd": "npm publish"
+  },
+  "author": "kujiale-mobile",
+  "homepage": "https://painterjs.github.io/",
+  "license": "MIT",
+  "keywords": [
+    "Painter"
+  ],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/painterjs/painter-kernel"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/painterjs/painter-kernel/issues"
+  },
+  "dependencies": {
+    "painter-kernel": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "path": "^0.12.7",
+    "rollup": "^2.52.6",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.3.5"
+  }
+}
