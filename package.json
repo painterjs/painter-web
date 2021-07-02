@@ -1,13 +1,12 @@
 {
   "name": "painter-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "为H5提供的painter",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
     "dev": "BUILD_ENV=DEV rollup -c rollup.config.js -w",
-    "build": "BUILD_ENV=PRD rollup -c rollup.config.js",
-    "prd": "npm publish"
+    "build": "BUILD_ENV=PRD rollup -c rollup.config.js"
   },
   "author": "kujiale-mobile",
   "homepage": "https://painterjs.github.io/",
@@ -20,13 +19,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/painterjs/painter-kernel"
+    "url": "git+https://github.com/painterjs/painter-web"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "bugs": {
-    "url": "https://github.com/painterjs/painter-kernel/issues"
+    "url": "https://github.com/painterjs/painter-web/issues"
   },
   "dependencies": {
     "painter-kernel": "^1.0.4"
